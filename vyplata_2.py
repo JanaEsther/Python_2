@@ -1,4 +1,9 @@
 
+with open('data/vykaz.txt', encoding='utf-8') as file:
+   text = file.read()
+print(text)
+
+
 vykaz = []
 
 with open('data/vykaz.txt', encoding ='utf-8') as file:
@@ -7,7 +12,7 @@ with open('data/vykaz.txt', encoding ='utf-8') as file:
 
 print(vykaz)
 
-hodinova_mzda = int(input("Zadej hodinovou mzdu:"))
+hodinova_mzda = int(input())
 mesicni_mzdy = []
 with open('data/vykaz.txt', encoding ='utf-8') as file:
     for line in file:
